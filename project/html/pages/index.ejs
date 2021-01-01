@@ -12,8 +12,8 @@
     <h1>Hazim ÇAKIL- İl-Sıcaklık Verisi</h1>
   </div>
 
-  <input class="search" type="text" placeholder="Şehir Adı">
-  <button type="button" onclick="searchWeather()">Ara</button>
+  <input id="cityName" class="search" type="text" placeholder="Şehir Adı">
+  <button id="ara" type="button" onclick="searchWeather()">Ara</button>
 
   <!-- <input class="search" type="text" placeholder="Enter city name">
   <button type="button" onclick="searchWeather()">Ara</button>
@@ -33,6 +33,15 @@
 
   <div id="image"></div>
    -->
+   <script>  
+    $("#cityName").keypress(function(event) { 
+        if (event.keyCode === 13) { 
+            $("#ara").click(); 
+        } 
+    }); 
+
+ 
+</script> 
 </body>
 
 </html>

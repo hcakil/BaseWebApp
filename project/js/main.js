@@ -68,7 +68,7 @@ function handleSignIn(){
 
 
 function getWeatherByName(searchQuery){
-  var url = "http://api.openweathermap.org/data/2.5/weather?q="+searchQuery+"&lang=tr&units=metric&appid="+apiKey;
+  var url = "https://api.openweathermap.org/data/2.5/weather?q="+searchQuery+"&lang=tr&units=metric&appid="+apiKey;
   
   $(".city").text("");
   $(".temp").text("");
