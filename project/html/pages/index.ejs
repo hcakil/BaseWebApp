@@ -8,16 +8,31 @@
   <!-- Check out more components here: http://getbootstrap.com/components/ -->
   <div class="page-header">
 
-  
-    <h1>Hazim ÇAKIL---Developer UI</h1>
+    <% include ../helpers/navbar %>
+    <h1>Hazim ÇAKIL- İl-Sıcaklık Verisi</h1>
   </div>
 
-  <p>Click on the button for a surprise.</p>
+  <input class="search" type="text" placeholder="Şehir Adı">
+  <button type="button" onclick="searchWeather()">Ara</button>
 
+  <!-- <input class="search" type="text" placeholder="Enter city name">
+  <button type="button" onclick="searchWeather()">Ara</button>
+   -->
+   <div class="error-message">
+
+   </div>
+  <div class="city">
+
+  </div>
+  <div class="temp">
+
+  </div>
+  <!-- <p>Click on the button for a surprise.</p> -->
+<!-- 
   <button onClick="showPicture()" class="btn btn-dark">Click me</button>
 
   <div id="image"></div>
-  
+   -->
 </body>
 
 </html>

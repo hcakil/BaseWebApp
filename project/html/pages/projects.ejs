@@ -12,11 +12,24 @@
     <h1>Projects</h1>
   </div>
 
-  <p>Click on the button for a surprise.</p>
+  <button onclick="handleSignIn()">Giriş</button>
+  <form onsubmit="handleMessageFormSubmit()" action="#">
+    Başlık:<br>
 
-  <button onClick="showPicture()" class="btn btn-dark">Click me</button>
+  <input id="post-title"><br>
+   Mesaj:<br>
 
-  <div id="image"></div>
+  <textarea id="post-body"></textarea><br>
+  <button>Gönder</button>
+  </form>
+
+  <div id="post-listing"></div>
+  
+  <!-- <p>Click on the button for a surprise.</p> -->
+
+  <!-- <button onClick="showPicture()" class="btn btn-dark">Click me</button> -->
+
+  <!-- <div id="image"></div> -->
   
 </body>
 
